@@ -266,7 +266,7 @@
         <img class="light-bot" src="{{ asset('assets/images/item/light-bot.png') }}" alt="">
 
         <!-- section-team -->
-        <div class="section-team flat-spacing">
+        {{--  <div class="section-team flat-spacing">
             <div class="container">
                 <div class="heading-section center mb-64">
                     <div class="heading-sub fw-semibold style-1 effectFade fadeUp">Team Members</div>
@@ -331,7 +331,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  --}}
         <!-- /section-team -->
 
         <!-- section-statistic -->
@@ -387,7 +387,7 @@
         <!-- /section-statistic -->
 
         <!-- section-awards -->
-        <div class="section-awards flat-spacing">
+        {{--  <div class="section-awards flat-spacing">
             <div class="container">
                 <div class="heading-section center mb-48">
                     <div class="heading-sub fw-semibold style-1 mb-0 effectFade fadeUp">Awards</div>
@@ -411,7 +411,7 @@
                     @endforeach
                 </div>
             </div>
-        </div>
+        </div>  --}}
         <!-- /section-awards -->
 
         <!-- section-testimonials -->
@@ -545,28 +545,34 @@
                         <div class="col-left">
                             <div class="heading-section mb-48">
                                 <div class="heading-sub fw-semibold effectFade fadeUp">Contact</div>
-                                <div class="heading-title text-gradient-3 effectFade fadeRotateX">Let's Build <br> Intelligent Things</div>
+                                {{--  <div class="heading-title text-gradient-3 effectFade fadeRotateX">Let's Build <br> Intelligent Things</div>  --}}
+                                <div class="heading-title text-gradient-3 effectFade fadeRotateX">Let's Build </div>
                             </div>
                             <div>
                                 <div class="contact-item mb-20 effectFade fadeRotateX">
                                     <i class="icon icon-envelope-solid"></i>
                                     <div class="content">
                                         <div class="title fw-semibold mb-2">E-mail address</div>
-                                        <div class="text">hello@youraiagency.com</div>
+                                        <div class="text">info@omvantara.com</div>
                                     </div>
                                 </div>
                                 <div class="contact-item effectFade fadeRotateX" data-delay="0.1">
                                     <i class="icon icon-headset-solid"></i>
                                     <div class="content">
                                         <div class="title fw-semibold mb-2">Phone number</div>
-                                        <div class="text">+1 (647) 555 0172</div>
+                                        <div class="text">+91 8469933455</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <form class="form-contact effectFade fadeUp" action="{{ url('/contact') }}" method="POST">
+                        @if(session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                        <form class="form-contact" action="{{ route('submit.contact') }}" method="POST">
                             @csrf
                             <h4 class="heading fw-semibold">Fill this form below</h4>
                             <fieldset class="mb-21">
@@ -575,16 +581,20 @@
                             </fieldset>
                             <fieldset class="mb-21">
                                 <label class="fw-semibold text-body-3 mb-20">Your Phone</label>
-                                <input type="text" name="phone" placeholder="Enter the e-mail" required>
+                                <input type="text" name="phone" placeholder="Enter your phone number">
+                            </fieldset>
+                            <fieldset class="mb-21">
+                                <label class="fw-semibold text-body-3 mb-20">Your Email</label>
+                                <input type="email" name="email" placeholder="Enter your email address">
                             </fieldset>
                             <fieldset class="mb-18">
-                                <label class="fw-semibold text-body-3 mb-0">More About The Project</label>
+                                <label class="fw-semibold text-body-3 mb-0">Details</label>
                                 <textarea name="message"></textarea>
                             </fieldset>
-                            <div class="attachment d-flex gap-8 align-items-center">
+                            {{--  <div class="attachment d-flex gap-8 align-items-center">
                                 <i class="icon icon-paperclip-solid fs-24"></i>
                                 <div class="fw-semibold text-body-3">Add an Attachment</div>
-                            </div>
+                            </div>  --}}
                             <button type="submit" class="tf-btn w-100">Submit Message</button>
                         </form>
                     </div>

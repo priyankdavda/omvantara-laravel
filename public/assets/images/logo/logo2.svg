@@ -1,0 +1,21 @@
+<svg width="130" height="30" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Brand Gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#18181B"/>
+      <stop offset="60%" stop-color="#43484d"/>
+      <stop offset="100%" stop-color="#FD3A25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Centered Text -->
+  <text x="50%" y="50%"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="Poppins, Montserrat, sans-serif"
+        font-size="21"
+        fill="url(#brandGrad)"
+        letter-spacing="0.5">
+    Omvantara
+  </text>
+</svg>

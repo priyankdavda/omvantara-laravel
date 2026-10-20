@@ -2,25 +2,28 @@
 <header class="tf-header header2">
     <div class="header-inner">
         <a href="{{ url('/') }}" class="logo-site">
-            <img src="{{ asset('assets/images/logo/logo.svg') }}" alt="">
+            <img src="{{ asset('assets/images/logo/logo2.svg') }}" alt="">
         </a>
         <div class="box-navigation">
             <ul class="nav-menu-main">
                 <li class="menu-item has-child">
-                    <a href="#" class="item-link link1 active">Home</a>
-                    <ul class="sub-menu">
+                    <a href="{{ url('/') }}" class="item-link link1 active">Home</a>
+                    {{--  <ul class="sub-menu">
                         <li class="sub-menu-item">
                             <a href="{{ url('/') }}" class="item-link link1 active">Home Gradient</a>
                         </li>
                         <li class="sub-menu-item">
                             <a href="{{ url('/home-v2') }}" class="item-link link1">Home Animated</a>
                         </li>
-                    </ul>
+                    </ul>  --}}
                 </li>
                 <li class="menu-item">
                     <a href="{{ url('/about') }}" class="item-link link1">About</a>
                 </li>
-                <li class="menu-item has-child">
+                <li class="menu-item">
+                    <a href="{{ url('/service') }}" class="item-link link1">Services</a>
+                </li>
+                {{--  <li class="menu-item has-child">
                     <a href="#" class="item-link link1">Services</a>
                     <ul class="sub-menu">
                         <li class="sub-menu-item">
@@ -30,8 +33,8 @@
                             <a href="{{ url('/service-single') }}" class="item-link link1">Services single</a>
                         </li>
                     </ul>
-                </li>
-                <li class="menu-item has-child">
+                </li>  --}}
+                {{--  <li class="menu-item has-child">
                     <a href="#" class="item-link link1">Works</a>
                     <ul class="sub-menu">
                         <li class="sub-menu-item">
@@ -41,8 +44,8 @@
                             <a href="{{ url('/work-single') }}" class="item-link link1">Works single</a>
                         </li>
                     </ul>
-                </li>
-                <li class="menu-item has-child">
+                </li>  --}}
+                {{--  <li class="menu-item has-child">
                     <a href="#" class="item-link link1">Blog</a>
                     <ul class="sub-menu">
                         <li class="sub-menu-item">
@@ -58,7 +61,7 @@
                             <a href="{{ url('/blog-single') }}" class="item-link link1">Blog single</a>
                         </li>
                     </ul>
-                </li>
+                </li>  --}}
                 <li class="menu-item">
                     <a href="{{ url('/contact') }}" class="item-link link1">Contact</a>
                 </li>

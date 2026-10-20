@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Hero Banner -->
-    <div class="section-hero">
+    {{--  <div class="section-hero">
         <div class="hero-image"></div>
         <div class="container">
             <div class="content-wrap text-center">
@@ -51,6 +51,73 @@
                 </div>
                 <p class="text effectFade fadeUp">
                     Omvantara builds fast scalable websites for businesses improving visibility </br> engaging customers and driving consistent online growth conversions effectively
+                </p>
+                <div class="bot-btns effectFade fadeRotateX">
+                    <a href="{{ url('/service') }}" class="tf-btn">Get Started</a>
+                    <a href="#pricing" class="tf-btn-2">Request Free Quote</a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-more">
+            <span class="fw-semibold link1">Scroll for more</span>
+            <i class="icon icon-long-arrow-alt-down-solid"></i>
+        </a>
+    </div>  --}}
+    <!-- /Hero Banner -->
+
+    <!-- Hero Banner -->
+    <div class="section-hero">
+        <div class="hero-image">
+            <video class="" muted autoplay loop playsinline>
+                <source src="{{ asset('assets/images/video/hero.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+        <div class="container">
+            <div class="content-wrap text-center">
+                <div class="sub fw-semibold effectFade fadeUp">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.53252 12.0966C3.75106 11.5025 4.59108 11.5025 4.81645 12.0966L5.54037 14.0567C5.60866 14.2411 5.75891 14.3913 5.9433 14.4596L7.90335 15.1835C8.49751 15.4021 8.49751 16.2421 7.90335 16.4674L5.9433 17.1914C5.75891 17.2597 5.60866 17.4099 5.54037 17.5943L4.81645 19.5543C4.59791 20.1485 3.75789 20.1485 3.53252 19.5543L2.8086 17.5943C2.74031 17.4099 2.59006 17.2597 2.40566 17.1914L0.44562 16.4674C-0.14854 16.2489 -0.14854 15.4089 0.44562 15.1835L2.40566 14.4596C2.59006 14.3913 2.74031 14.2411 2.8086 14.0567L3.53252 12.0966Z" fill="url(#paint0_linear_580_105)"/>
+                        <path d="M3.53252 12.0966C3.75106 11.5025 4.59108 11.5025 4.81645 12.0966L5.54037 14.0567C5.60866 14.2411 5.75891 14.3913 5.9433 14.4596L7.90335 15.1835C8.49751 15.4021 8.49751 16.2421 7.90335 16.4674L5.9433 17.1914C5.75891 17.2597 5.60866 17.4099 5.54037 17.5943L4.81645 19.5543C4.59791 20.1485 3.75789 20.1485 3.53252 19.5543L2.8086 17.5943C2.74031 17.4099 2.59006 17.2597 2.40566 17.1914L0.44562 16.4674C-0.14854 16.2489 -0.14854 15.4089 0.44562 15.1835L2.40566 14.4596C2.59006 14.3913 2.74031 14.2411 2.8086 14.0567L3.53252 12.0966Z" fill="url(#paint1_linear_580_105)"/>
+                        <path d="M11.4068 0.670991C11.7346 -0.223664 12.9981 -0.223664 13.3259 0.670991L14.7874 4.61157C14.8898 4.89157 15.1152 5.11011 15.3952 5.21938L19.3358 6.68088C20.2304 7.00869 20.2304 8.27214 19.3358 8.59995L15.3952 10.0614C15.1152 10.1639 14.8967 10.3893 14.7874 10.6693L13.3259 14.6098C12.9981 15.5045 11.7346 15.5045 11.4068 14.6098L9.94534 10.6693C9.8429 10.3893 9.61753 10.1707 9.33752 10.0614L5.39694 8.59995C4.50229 8.27214 4.50229 7.00869 5.39694 6.68088L9.33752 5.21938C9.61753 5.11694 9.83607 4.89157 9.94534 4.61157L11.4068 0.670991Z" fill="url(#paint2_linear_580_105)"/>
+                        <path d="M11.4068 0.670991C11.7346 -0.223664 12.9981 -0.223664 13.3259 0.670991L14.7874 4.61157C14.8898 4.89157 15.1152 5.11011 15.3952 5.21938L19.3358 6.68088C20.2304 7.00869 20.2304 8.27214 19.3358 8.59995L15.3952 10.0614C15.1152 10.1639 14.8967 10.3893 14.7874 10.6693L13.3259 14.6098C12.9981 15.5045 11.7346 15.5045 11.4068 14.6098L9.94534 10.6693C9.8429 10.3893 9.61753 10.1707 9.33752 10.0614L5.39694 8.59995C4.50229 8.27214 4.50229 7.00869 5.39694 6.68088L9.33752 5.21938C9.61753 5.11694 9.83607 4.89157 9.94534 4.61157L11.4068 0.670991Z" fill="url(#paint3_linear_580_105)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_580_105" x1="10.2993" y1="-1.30435" x2="21.6031" y2="11.1057" gradientUnits="userSpaceOnUse">
+                                <stop offset="1" stop-color="#555D64"/>
+                                <stop offset="1" stop-color="#292C2E"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_580_105" x1="10.0034" y1="0" x2="10.0034" y2="20" gradientUnits="userSpaceOnUse">
+                                <stop offset="1" stop-color="#EA2B16"/>
+                                <stop offset="1" stop-color="#FF3B26"/>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_580_105" x1="10.2993" y1="-1.30435" x2="21.6031" y2="11.1057" gradientUnits="userSpaceOnUse">
+                                <stop offset="1" stop-color="#555D64"/>
+                                <stop offset="1" stop-color="#292C2E"/>
+                            </linearGradient>
+                            <linearGradient id="paint3_linear_580_105" x1="10.0034" y1="0" x2="10.0034" y2="20" gradientUnits="userSpaceOnUse">
+                                <stop offset="1" stop-color="#EA2B16"/>
+                                <stop offset="1" stop-color="#FF3B26"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    Omvantara Agency
+                </div>
+                <div class="title text-display-2 effectFade fadeRotateX">
+                    <span class="title1 fw-semibold text-gradient-1">Smart Web Solutions </span>
+                    <br>
+                    <div class="title2 d-flex gap-20 justify-content-center flex-wrap">
+                        <span class="fw-semibold text-gradient-1"> for Businesses</span>
+                        <div class="title-icon">
+                            <div class="box"></div>
+                            <div class="title-icon-wrap">
+                                <img class="img-1 img-transform-3" src="{{ asset('assets/images/item/hero-1.svg') }}" alt="">
+                                <img class="img-2 img-transform-3" src="{{ asset('assets/images/item/hero-2.svg') }}" alt="">
+                                <img class="img-3 img-transform-3" src="{{ asset('assets/images/item/hero-3.svg') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text effectFade fadeUp">
+                    Omvantara builds fast scalable websites for Indian businesses improving visibility engaging <br> customers and driving consistent online growth conversions effectively.
                 </p>
                 <div class="bot-btns effectFade fadeRotateX">
                     <a href="{{ url('/service') }}" class="tf-btn">Get Started</a>
@@ -516,7 +583,7 @@
         <img class="light-bot" src="{{ asset('assets/images/item/light-bot.png') }}" alt="">
 
         <!-- section-team -->
-        <div class="section-team flat-spacing">
+        {{--  <div class="section-team flat-spacing">
             <div class="container">
                 <div class="heading-section center mb-64">
                     <div class="heading-sub fw-semibold style-1 effectFade fadeUp">Team Members</div>
@@ -581,7 +648,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  --}}
         <!-- /section-team -->
 
         <!-- section-statistic -->
@@ -637,7 +704,7 @@
         <!-- /section-statistic -->
 
         <!-- section-awards -->
-        <div class="section-awards flat-spacing">
+        {{--  <div class="section-awards flat-spacing">
             <div class="container">
                 <div class="heading-section center mb-48">
                     <div class="heading-sub fw-semibold style-1 mb-0 effectFade fadeUp">Awards</div>
@@ -661,7 +728,7 @@
                     @endforeach
                 </div>
             </div>
-        </div>
+        </div>  --}}
         <!-- /section-awards -->
 
         <!-- section-testimonials -->
@@ -878,28 +945,34 @@
                         <div class="col-left">
                             <div class="heading-section mb-48">
                                 <div class="heading-sub fw-semibold effectFade fadeUp">Contact</div>
-                                <div class="heading-title text-gradient-3 effectFade fadeRotateX">Let's Build <br> Intelligent Things</div>
+                                {{--  <div class="heading-title text-gradient-3 effectFade fadeRotateX">Let's Build <br> Intelligent Things</div>  --}}
+                                <div class="heading-title text-gradient-3 effectFade fadeRotateX">Let's Build </div>
                             </div>
                             <div>
                                 <div class="contact-item mb-20 effectFade fadeRotateX">
                                     <i class="icon icon-envelope-solid"></i>
                                     <div class="content">
                                         <div class="title fw-semibold mb-2">E-mail address</div>
-                                        <div class="text">hello@youraiagency.com</div>
+                                        <div class="text">info@omvantara.com</div>
                                     </div>
                                 </div>
                                 <div class="contact-item effectFade fadeRotateX" data-delay="0.1">
                                     <i class="icon icon-headset-solid"></i>
                                     <div class="content">
                                         <div class="title fw-semibold mb-2">Phone number</div>
-                                        <div class="text">+1 (647) 555 0172</div>
+                                        <div class="text">+91 8469933455</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <form class="form-contact effectFade fadeUp" action="{{ url('/') }}" method="POST">
+                        @if(session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                        <form class="form-contact" action="{{ route('submit.contact') }}" method="POST">
                             @csrf
                             <h4 class="heading fw-semibold">Fill this form below</h4>
                             <fieldset class="mb-21">
@@ -908,16 +981,20 @@
                             </fieldset>
                             <fieldset class="mb-21">
                                 <label class="fw-semibold text-body-3 mb-20">Your Phone</label>
-                                <input type="text" name="phone" placeholder="Enter the e-mail" required>
+                                <input type="text" name="phone" placeholder="Enter your phone number">
+                            </fieldset>
+                            <fieldset class="mb-21">
+                                <label class="fw-semibold text-body-3 mb-20">Your Email</label>
+                                <input type="email" name="email" placeholder="Enter your email address">
                             </fieldset>
                             <fieldset class="mb-18">
-                                <label class="fw-semibold text-body-3 mb-0">More About The Project</label>
+                                <label class="fw-semibold text-body-3 mb-0">Details</label>
                                 <textarea name="message"></textarea>
                             </fieldset>
-                            <div class="attachment d-flex gap-8 align-items-center">
+                            {{--  <div class="attachment d-flex gap-8 align-items-center">
                                 <i class="icon icon-paperclip-solid fs-24"></i>
                                 <div class="fw-semibold text-body-3">Add an Attachment</div>
-                            </div>
+                            </div>  --}}
                             <button type="submit" class="tf-btn w-100">Submit Message</button>
                         </form>
                     </div>

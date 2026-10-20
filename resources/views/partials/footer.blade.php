@@ -1,14 +1,14 @@
 <!-- footer -->
 <footer>
     <div class="footer-image">
-        <img class="effectFade fadeUp" src="{{ asset('assets/images/logo/logo-footer.png') }}" alt="">
+        <img class="effectFade fadeUp" src="{{ asset('assets/images/logo/logo-footer2.png') }}" alt="">
     </div>
     <div class="container">
         <div class="footer-content">
-            <a href="{{ url('/') }}" class="footer-logo">
+            {{--  <a href="{{ url('/') }}" class="footer-logo">
                 <img src="{{ asset('assets/images/logo/logo-2.svg') }}" alt="">
-            </a>
-            <div class="title h6 fw-semibold">Get connected <br> with Aigocy on social</div>
+            </a>  --}}
+            <div class="title h6 fw-semibold">Get connected <br> with Omvantara on social</div>
             <div class="text">Dont miss our new updates!</div>
             <div class="tf-social-1 justify-content-center">
                 <a href="https://x.com/" target="_blank" class="text-body-1 fw-semibold">
@@ -44,7 +44,7 @@
                 <li><a href="{{ url('/work') }}" class="fw-semibold link-underline link1">Works</a></li>
                 <li><a href="{{ url('/contact') }}" class="fw-semibold link-underline link1">Contact</a></li>
             </ul>
-            <p class="text-secondary coppy-rights text-center">© {{ date('Y') }} Aigocy. All Rights Reserved.</p>
+            <p class="text-secondary coppy-rights text-center">© 2026 Omvantara. All Rights Reserved.</p>
             <a href="#" class="action-go-top d-flex gap-8 align-items-center justify-content-end link1">
                 <span class="fw-semibold">Back to top</span>
                 <i class="icon icon-long-arrow-alt-up-solid fs-20"></i>
